@@ -10,7 +10,7 @@ router.post('/register', async function (req, res, next) {
     try {
         let { username, password, email } = req.body;
         let newUser = await userController.CreateAnUser(
-            username, password, email, "69b0ddec842e41e8160132b8"
+            username, password, email, "69b0d7001ac226e112673abe"
         )
         res.send(newUser)
     } catch (error) {
